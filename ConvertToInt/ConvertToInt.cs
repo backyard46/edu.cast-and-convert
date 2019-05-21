@@ -11,6 +11,9 @@ namespace CastDoubleToInt
 {
     public partial class CastDoubleToInt : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CastDoubleToInt"/> class.
+        /// </summary>
         public CastDoubleToInt()
         {
             InitializeComponent();
@@ -19,10 +22,10 @@ namespace CastDoubleToInt
         /// <summary>
         /// -2.9～2.9をParseでintに変換してみる。
         /// → エラー。そもそも「Parse」は「変換」ではなく「構文読解」や「解釈」なので、
-        /// 　一定のルール（ここではデータ型）にそぐわないものはエラーになる。
+        /// 一定のルール（ここではデータ型）にそぐわないものはエラーになる。
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">イベント呼び出し元オブジェクト</param>
+        /// <param name="e">e</param>
         private void ButtonCast_Click(object sender, EventArgs e)
         {
             TextResult1.Text = int.Parse(textBox1.Text).ToString();

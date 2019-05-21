@@ -11,6 +11,9 @@ namespace CastDoubleToInt
 {
     public partial class CastDoubleToInt : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CastDoubleToInt"/> class.
+        /// </summary>
         public CastDoubleToInt()
         {
             InitializeComponent();
@@ -19,8 +22,8 @@ namespace CastDoubleToInt
         /// <summary>
         /// doubleの-2.9～2.9をintにキャストしてみる。
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">イベント呼び出し元オブジェクト</param>
+        /// <param name="e">e</param>
         private void ButtonCast_Click(object sender, EventArgs e)
         {
             TextResult1.Text = ((int) double.Parse(textBox1.Text)).ToString();
